@@ -40,4 +40,23 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/Mananjot17/BeyondChats.git)
+   git clone https://github.com/Mananjot17/BeyondChats.git
+
+2. Go the the project directory
+
+   ```bash
+   cd BeyondChats
+
+3. Install the Dependencies
+
+   run
+   ```bash
+   npm install
+
+4. Run the project
+
+   run
+   ```bash
+   npm run dev
+
+5. Go to [localhost:3000](http://localhost:3000/) to run the project
