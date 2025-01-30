@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const ChatbotTrainingStatus = ({ isTraining, trainingComplete }) => {
+const ChatbotTrainingStatus = ({
+  isTraining,
+  trainingComplete,
+  websiteURL,
+}) => {
   return (
     <div className="p-8 lg:p-16">
       <div className="w-full p-8 bg-black/50 text-white rounded-lg">
@@ -39,7 +43,11 @@ const ChatbotTrainingStatus = ({ isTraining, trainingComplete }) => {
               Your chatbot is now ready! You can now proceed to the next step.
             </p>
             <button
-              onClick={() => (window.location.href = "/integration-testing")}
+              onClick={() => {
+                window.location.href = `/integration-testing?url=${encodeURIComponent(
+                  websiteURL
+                )}`;
+              }}
               className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition duration-300"
             >
               Continue to Setup

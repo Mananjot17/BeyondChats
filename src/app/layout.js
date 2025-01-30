@@ -23,9 +23,20 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 min-h-screen`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 `}
         >
-          {children}
+          <div
+            className="min-h-screen"
+            style={{
+              backgroundImage:
+                'url("https://framerusercontent.com/images/hqWg4zLiKlfr6XakOIYRtdVEQXk.png")',
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {children}
+          </div>
         </body>
       </html>
     </ClerkProvider>

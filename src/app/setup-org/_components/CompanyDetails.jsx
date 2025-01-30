@@ -10,6 +10,7 @@ const CompanyDetails = () => {
   const [metaData, setMetaData] = useState(null);
   const [isTraining, setIsTraining] = useState(false);
   const [trainingComplete, setTrainingComplete] = useState(false);
+  const [websiteURL, setWebsiteURL] = useState("");
 
   const websiteData = [
     {
@@ -146,6 +147,7 @@ const CompanyDetails = () => {
 
   const fetchMetaData = async ({ websiteURL }) => {
     if (!websiteURL) return;
+    setWebsiteURL(websiteURL);
     try {
       const response = await fetch(`/api/fetchMeta?url=${websiteURL}`);
       const data = await response.json();
@@ -198,6 +200,7 @@ const CompanyDetails = () => {
           <ChatbotTrainingStatus
             isTraining={isTraining}
             trainingComplete={trainingComplete}
+            websiteURL={websiteURL}
           />
         </>
       )}

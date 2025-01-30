@@ -4,16 +4,7 @@ import { motion } from "framer-motion";
 
 const RegisterLayout = ({ children }) => {
   return (
-    <div
-      className="min-h-screen flex flex-col lg:flex-row "
-      style={{
-        backgroundImage:
-          'url("https://framerusercontent.com/images/hqWg4zLiKlfr6XakOIYRtdVEQXk.png")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className=" flex flex-col lg:flex-row ">
       {/* Left Section: Heading & Description */}
       <div className="lg:w-1/2 flex flex-col justify-center items-center p-8 lg:p-16 text-white">
         <div
