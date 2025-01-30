@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chatbot Integration Project
 
-## Getting Started
+This project allows users to sign up, set up a chatbot for their website, and test the integration. The app uses Clerk for authentication (via Google and email) and provides a user-friendly flow for the setup and testing of the chatbot.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project consists of three main pages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **User Registration Page**:
+   - Users can register and sign in using either Google or email authentication, powered by [Clerk](https://www.clerk.dev/).
+   - Upon successful sign-up, the user is redirected to the setup page.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Setup Page**:
+   - This page allows users to provide their website information, including:
+     - Website URL
+     - Website name
+   - Once the form is submitted, metadata is fetched (using dummy data for simulation) from the provided website URL.
+   - The user can then proceed to the integration page to test the chatbot.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Integration Page**:
+   - Here, users can test their chatbot integration by simulating a chatbot interaction using the provided URL.
+   - The page displays integration success messages with confetti animation once the integration is completed successfully.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Clerk Authentication**: Users can sign up and log in via Google or email using Clerk.
+- **Website Setup**: Collects and simulates fetching metadata from a user-provided website.
+- **Chatbot Integration**: Provides an easy-to-integrate script for adding the chatbot to a website.
+- **Test Chatbot**: Allows users to test the chatbot integration on their website with a simulated chatbot interface.
+- **Confetti Animation**: Displays a confetti animation when the chatbot integration is successful.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup Instructions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project locally:
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
