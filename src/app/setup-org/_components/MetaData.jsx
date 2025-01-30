@@ -5,7 +5,7 @@ const MetaData = ({ metaData }) => {
     <div className="p-8 lg:p-16">
       <div className="w-full p-8 bg-black/50 text-white rounded-lg">
         <h2 className="text-2xl font-bold mb-4">
-          Website's Metadata, First step towards automation!!
+          Website Metadata, First step towards automation!!
         </h2>
         <p>
           <strong>Title:</strong> {metaData.title || "N/A"}

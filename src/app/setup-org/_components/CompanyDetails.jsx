@@ -179,8 +179,9 @@ const CompanyDetails = () => {
                 Get Your Chatbot Ready to Rock!
               </h1>
               <p className="text-lg lg:text-xl mb-6 max-w-lg text-center lg:text-left">
-                Enter your website details and let us do the magic! We'll fetch
-                your site's data, analyze it, and train your AI-powered chatbot.
+                Enter your website details and let us do the magic! We will
+                fetch your site data, analyze it, and train your AI-powered
+                chatbot.
               </p>
             </motion.div>
           </div>
