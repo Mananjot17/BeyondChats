@@ -29,6 +29,10 @@ The project consists of three main pages:
 - **Test Chatbot**: Allows users to test the chatbot integration on their website with a simulated chatbot interface.
 - **Confetti Animation**: Displays a confetti animation when the chatbot integration is successful.
 
+  You can access the live version of the project here:
+
+[Live Website - Beyond Chats](https://beyond-chats-iota.vercel.app/)
+
 ## Setup Instructions
 
 To run this project locally:
